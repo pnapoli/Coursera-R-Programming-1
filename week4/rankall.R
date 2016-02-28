@@ -30,7 +30,7 @@ rankall <- function(outcome, num = "best") {
     ## (abbreviated) state name
     
     # read the data file
-    directory <- "./data/outcome-of-care-measures.csv"
+    directory <- "./outcome-of-care-measures.csv"
     data <- read.csv(directory, colClasses="character")
     valid_outcomes <- c("heart attack", "heart failure", "pneumonia")
     state_arr <- sort(unique(data$State))
