@@ -1,4 +1,4 @@
-setwd("~/Desktop/Online Coursera/Coursera-R-Programming/week4/")
+setwd("~/Documents/DataScience/rprog_data_ProgAssignment3-data")
 
 num_helper <- function(state_subset, col_num, num) {
     # get "attack", "failure" and "pneumonia" vector
@@ -58,7 +58,4 @@ rankall <- function(outcome, num = "best") {
     return(result)
 }
 
-# tests
-head(rankall("heart attack", 20), 10)
-tail(rankall("pneumonia", "worst"), 3)
-tail(rankall("heart failure"), 10)
+
