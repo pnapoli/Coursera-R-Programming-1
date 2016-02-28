@@ -1,4 +1,4 @@
-setwd("~/Desktop/Online Coursera/Coursera-R-Programming/week4/")
+setwd("~/Documents/DataScience/rprog_data_ProgAssignment3-data")
 list.files()
 # helper function for getting the hospital name
 helper <- function(data, col_num, state) {
@@ -17,7 +17,7 @@ best <- function(state, outcome) {
     ## rate
     
     # read the data file
-    directory <- "./data/outcome-of-care-measures.csv"
+    directory <- "./outcome-of-care-measures.csv"
     data <- read.csv(directory, colClasses="character")
     # change data type from character to numeric
     data[, 11] <- as.numeric(data[, 11]) # heart attack
