@@ -1,4 +1,4 @@
-setwd("~/Desktop/Online Coursera/Coursera-R-Programming/week4/")
+setwd("~/Documents/DataScience/rprog_data_ProgAssignment3-data")
 
 num_helper <- function(data, col_num, state, num) {
     state_subset <- data[data[, 7]==state, ]
@@ -28,7 +28,7 @@ rankhospital <- function(state, outcome, num = "best") {
     ## 30-day death rate
     
     # read the data file
-    directory <- "./data/outcome-of-care-measures.csv"
+    directory <- "./outcome-of-care-measures.csv"
     data <- read.csv(directory, colClasses="character")
     # change data type from character to numeric
     data[, 11] <- as.numeric(data[, 11]) # heart attack
@@ -56,7 +56,4 @@ rankhospital <- function(state, outcome, num = "best") {
     }
 }
 
-# tests
-rankhospital("MN", "heart attack", 5000)
-rankhospital("MD", "heart attack", "worst")
-rankhospital("TX", "heart failure", 4)
+
